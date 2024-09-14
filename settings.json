@@ -1,13 +1,11 @@
 {
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "files.autoSave": "afterDelay",
-    "workbench.startupEditor": "none",
-    "editor.renderLineHighlight": "gutter", // Tira a linha de destaque do editor
-    "editor.minimap.enabled": false, // Desabilita o minimap
+    "workbench.startupEditor": "none", // Desabilita o minimap
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
-        "markdown": false,
+        "markdown": true,
         "scminput": false,
         "javascript": true,
         "cpp": true
@@ -31,7 +29,7 @@
     "github.copilot.editor.enableAutoCompletions": true,
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.lineHeight": 1.8,
     "extensions.ignoreRecommendations": true,
     "workbench.colorCustomizations": {
@@ -42,6 +40,12 @@
     "workbench.layoutControl.enabled": false,
     "window.menuBarVisibility": "toggle",
     "editor.semanticHighlighting.enabled": false,
+    "workbench.colorTheme": "Default Dark Modern",
+    "editor.semanticTokenColorCustomizations": {
+        "[Default Dark Modern]": {
+            "enabled": false
+        }
+    },
     "breadcrumbs.enabled": false, // Tira o diretório do arquivo no rodapé
     "apc.font.family": "Inter 24pt",
     "apc.stylesheet": {
@@ -52,7 +56,14 @@
         ".pane-body": "padding: 8px",
         ".split-view-view:first-child .pane-header": "display: none !important;",
         ".monaco-list-row": "border-radius: 4px;",
-        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;",
+        ".editor-actions": "display: none",
+    },
+    "apc.header": {
+        "height": 36,
+    },
+    "apc.listRow": {
+        "height": 24,
     },
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
@@ -63,4 +74,9 @@
     },
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "workbench.activityBar.location": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "editor.stickyScroll.enabled": false,
+    "workbench.statusBar.visible": false,
 }
