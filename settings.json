@@ -1,19 +1,10 @@
 {
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "files.autoSave": "afterDelay",
-    "workbench.startupEditor": "none", // Desabilita o minimap
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": true,
-        "scminput": false,
-        "javascript": true,
-        "cpp": true
-    },
+    "workbench.startupEditor": "none",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     },
-    "workbench.iconTheme": "material-icon-theme",
     "liveServer.settings.donotShowInfoMsg": true,
     "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
     "[javascript]": {
@@ -32,25 +23,15 @@
     "editor.fontSize": 15,
     "editor.lineHeight": 1.8,
     "extensions.ignoreRecommendations": true,
-    "workbench.colorCustomizations": {
-        "[Default Dark Modern]": {}
-    },
-    "workbench.editor.labelFormat": "short", // Mostra o diretório do arquivo no título da aba
+    "workbench.editor.labelFormat": "short",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "window.menuBarVisibility": "toggle",
-    "editor.semanticHighlighting.enabled": false,
     "workbench.colorTheme": "Default Dark Modern",
-    "editor.semanticTokenColorCustomizations": {
-        "[Default Dark Modern]": {
-            "enabled": false
-        }
-    },
-    "breadcrumbs.enabled": false, // Tira o diretório do arquivo no rodapé
+    "breadcrumbs.enabled": false,
     "apc.font.family": "Inter 24pt",
     "apc.stylesheet": {
         ".title-label > h2": "display: none",
-        // ".editor-actions": "display: none",
         ".nosidebar .inline-tabs-placeholder": "width: 75px",
         ".pane-header": "padding: 0 8px",
         ".pane-body": "padding: 8px",
@@ -78,5 +59,16 @@
     "editor.minimap.enabled": false,
     "editor.renderLineHighlight": "none",
     "editor.stickyScroll.enabled": false,
-    "workbench.statusBar.visible": false,
+    "workbench.editor.enablePreview": false,
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "editor.semanticHighlighting.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": false
 }
