@@ -23,6 +23,8 @@
     "editor.fontSize": 15,
     "editor.lineHeight": 1.8,
     "extensions.ignoreRecommendations": true,
+    "javascript.suggest.autoImports": true,
+    "workbench.tree.enableStickyScroll": false,
     "workbench.editor.labelFormat": "short",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
@@ -70,5 +72,22 @@
     },
     "editor.semanticHighlighting.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "files.associations": {
+        ".env.*": "dotenv",
+        ".prettierrc": "json",
+        "*.css": "css",
+        ".dev.vars": "dotenv"
+    },
+    "git.enableSmartCommit": true,
+    "editor.accessibilitySupport": "off",
+    "editor.multiCursorMergeOverlapping": false,
+    "terminal.integrated.env.windows": {},
+    "console-ninja.featureSet": "Community",
     "workbench.statusBar.visible": false
 }
