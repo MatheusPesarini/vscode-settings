@@ -1,4 +1,11 @@
 {
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.cursorBlinking": true,
+  "biome.enabled": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell", // Usando o Powershell 7.4.5 como terminal padrão
   "files.autoSave": "afterDelay",
   "editor.formatOnSave": true,
@@ -18,7 +25,7 @@
   "code-runner.runInTerminal": true,
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.fontFamily": "JetBrains Mono",
-  "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe", // Usando a fonte JetBrainsMono Nerd Font
+  "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/gcc.exe", // Usando a fonte JetBrainsMono Nerd Font
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.lineHeight": 1.8,
@@ -64,15 +71,18 @@
   "workbench.editor.enablePreview": false,
   "[typescript]": {
     "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
     "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "editor.semanticHighlighting.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
   "emmet.includeLanguages": {
+    "blade": "html",
     "javascript": "javascriptreact"
   },
   "emmet.syntaxProfiles": {
@@ -82,7 +92,9 @@
     ".env.*": "dotenv",
     ".prettierrc": "json",
     "*.css": "css",
-    ".dev.vars": "dotenv"
+    ".dev.vars": "dotenv",
+    "*.php": "php",
+    "*.blade.php": "blade"
   },
   "git.enableSmartCommit": true,
   "editor.accessibilitySupport": "off",
@@ -91,10 +103,10 @@
     "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
   },
   "console-ninja.featureSet": "Community",
-  "editor.scrollbar.vertical": "hidden",
+  // "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 0,
-  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  // "editor.scrollbar.horizontalScrollbarSize": 10,
   "workbench.activityBar.location": "hidden",
   "gitlens.statusBar.enabled": false,
   "gitlens.hovers.enabled": false,
@@ -119,7 +131,112 @@
   },
   "workbench.startupEditor": "none",
   "cmake.showOptionsMovedNotification": false,
-  "php.validate.executablePath": "C:/Users/mathe/.config/herd/bin/php83/php.exe",
+  "C_Cpp.default.includePath": [
+    "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include",
+    "C:/msys64/ucrt64/include",
+    "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"
+  ],
+  "php.validate.executablePath": "C:\\Users\\mathe\\.config\\herd\\bin\\php83\\php.exe",
+  "php.validate.run": "onType",
+  "php.suggest.basic": false,
+  "intelephense.files.maxSize": 5000000,
+  "intelephense.environment.includePaths": [
+    "c:/path/to/your/project/vendor"
+  ],
+  "intelephense.diagnostics.enable": true,
+  "intelephense.format.enable": true,
+  "intelephense.completion.insertUseDeclaration": true,
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib"
+  ],
+  "editor.formatOnType": true,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "python.createEnvironment.trigger": "off",
-  "workbench.statusBar.visible": false
+  "github.copilot.advanced": {
+    "authProvider": "github"
+  },
+  "terminal.integrated.fontLigatures": true,
+  "react-native-tools.showUserTips": false,
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "workbench.statusBar.visible": false,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
 }
